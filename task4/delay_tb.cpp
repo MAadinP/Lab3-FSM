@@ -12,7 +12,7 @@ int main(int argc, char **argv, char **env) {
 
   Verilated::commandArgs(argc, argv);
   // init top verilog instance
-  Vdelay * top = new Vdelay;
+  Vdelay* top = new Vdelay;
   // init trace dump
   Verilated::traceEverOn(true);
   VerilatedVcdC* tfp = new VerilatedVcdC;
@@ -21,7 +21,7 @@ int main(int argc, char **argv, char **env) {
  
   // init Vbuddy
   if (vbdOpen()!=1) return(-1);
-  vbdHeader("L3T2:Delay");
+  vbdHeader("F1 Lights");
   vbdSetMode(1);        // Flag mode set to one-shot
 
   // initialize simulation inputs
