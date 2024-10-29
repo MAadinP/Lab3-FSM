@@ -32,6 +32,7 @@ public:
         top->clk = 0;
         top->rst = 0;
         top->en = 1;
+        top->data_out = 1;
     }
 
     // Runs the simulation for a clock cycle, evaluates the DUT, dumps waveform.

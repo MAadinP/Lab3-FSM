@@ -1,0 +1,4 @@
+- vbuddy cpp config files inside each task?
+- Weird title formatting on the task3 header
+- Task 3 add a attach usb script in the clktick sh
+- In the testbenches put in an keyboard interrupt q to terminate the sim
