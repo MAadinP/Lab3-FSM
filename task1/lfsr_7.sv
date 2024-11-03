@@ -1,4 +1,4 @@
-module lfsr #(
+module lfsr_7 #(
     parameter D_WIDTH = 7
 )(
     input   logic       clk,

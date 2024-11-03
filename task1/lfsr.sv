@@ -1,5 +1,5 @@
 module lfsr #(
-    parameter D_WIDTH = 7
+    parameter D_WIDTH = 4
 )(
     input   logic       clk,
     input   logic       rst,
@@ -11,7 +11,7 @@ always_ff @(posedge clk) begin
     if (rst)
         data_out <= {{D_WIDTH-1{1'b0}}, 1};
     else if (en)
-        data_out <= {data_out[D_WIDTH-2:0], data_out[7] ^ data_out[3]};
+        data_out <= {data_out[D_WIDTH-2:0], data_out[3] ^ data_out[2]};
 end
 
 endmodule

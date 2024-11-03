@@ -7,7 +7,7 @@ module lfsr_7 #(
     output  logic [D_WIDTH-1:0] data_out
 );
 
-initial data_out <= 7'b0000001;
+initial data_out = 7'b0000001;
 
 always_ff @(posedge clk) begin
     if (rst)
